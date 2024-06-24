@@ -1,10 +1,9 @@
 file(GLOB HeaderFiles "include/*.h")
 
 file(GLOB SourceFiles
-        "src/audiosource/**/*.h"
-        "src/audiosource/**/*.cpp"
-        "src/core/*.cpp"
-        "src/filter/*.cpp"
+  "src/audiosource/**/*.*"
+  "src/core/*.*"
+  "src/filter/*.*"
 )
 
 add_library(SoLoud STATIC ${HeaderFiles} ${SourceFiles})
